@@ -64,6 +64,15 @@ Add. gravity: 113.81
 - Shotgun
 - Heroku
 
+### Environment Variables
+You will need to create a `.env` file in the root of the
+directory and include the following variables.
+```
+export TEST_USERNAME=username
+export TEST_PASSWORD=password
+export TEST_APIKEY=apikey
+```
+
 ### The Instructions
 To run the application run `shotgun` and visit
 `localhost:9393` in the browser. It is also live on
