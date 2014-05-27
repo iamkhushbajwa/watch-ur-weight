@@ -24,5 +24,6 @@ describe Report do
     it { report.category?("docx").should eq 'Documents' }
     it { report.category?("bin").should eq 'Binaries' }
     it { report.category?("txt").should eq 'Text' }
+    it { report.category?("nothing").should eq 'Others' }
   end
 end
