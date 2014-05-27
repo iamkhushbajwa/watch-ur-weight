@@ -26,4 +26,13 @@ describe Report do
     it { report.category?("txt").should eq 'Text' }
     it { report.category?("nothing").should eq 'Others' }
   end
+
+  context "File Gravity" do
+    it { report.gravity("Videos").should eq 1.4 }
+    it { report.gravity("Songs").should eq 1.2 }
+    it { report.gravity("Documents").should eq 1.1 }
+    it { report.gravity("Binaries").should eq 1 }
+    it { report.gravity("Text").should eq 1 }
+    it { report.gravity("Others").should eq 1 }
+  end
 end
