@@ -28,4 +28,15 @@ class Report
     }
     return "Others"
   end
+
+  def gravity(category)
+    {
+      videos: 1.4,
+      songs: 1.2,
+      documents: 1.1,
+      binaries: 1.0,
+      text: 1.0,
+      others: 1.0
+    }[category.downcase.to_sym]
+  end
 end

@@ -31,8 +31,8 @@ describe Report do
     it { report.gravity("Videos").should eq 1.4 }
     it { report.gravity("Songs").should eq 1.2 }
     it { report.gravity("Documents").should eq 1.1 }
-    it { report.gravity("Binaries").should eq 1 }
-    it { report.gravity("Text").should eq 1 }
-    it { report.gravity("Others").should eq 1 }
+    it { report.gravity("Binaries").should eq 1.0 }
+    it { report.gravity("Text").should eq 1.0 }
+    it { report.gravity("Others").should eq 1.0}
   end
 end
