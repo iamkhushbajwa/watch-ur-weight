@@ -11,4 +11,13 @@ class Report
     resource = RestClient::Resource.new("https://my.workshare.com/api/open-v1.0/files.json", :cookies => response.cookies)
     resource.get(:accept => 'application/json')
   end
+
+  def category?(extension)
+    {
+      videos: ["avi"]
+    }.each{|key, value|
+      return key.to_s.capitalize if value.include?(extension)
+    }
+    return "Others"
+  end
 end

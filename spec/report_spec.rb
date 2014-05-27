@@ -16,4 +16,8 @@ describe Report do
     response = File.read("spec/sample_response.json")
     expect(report.json(response)).to have_key('files')
   end
+  
+  context "File Types" do
+    it { report.category?("avi").should eq 'Videos' }
+  end
 end
