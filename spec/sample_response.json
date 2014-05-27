@@ -1,0 +1,47 @@
+{
+    "pagination": {
+      "current_page": 1,
+      "total_pages": 1,
+      "total_entries": 2
+    },
+    "files": [
+      {
+        "id": 2,
+        "name": "I'm deck number 2",
+        "extension": "ppt",
+        "version": 1,
+        "size": 1601,
+        "created_at": "2013-05-02T10:15:00Z",
+        "updated_at": "2013-05-02T10:15:00Z",
+        "creator": {
+          "id": 1,
+          "name": "User 1",
+          "email": "email_1@skyslides.com",
+          "uuid": "387a3ddb-eb1f-4988-bb5b-029f1e8af784"
+        },
+        "url": "http://www.example.com/decks/2",
+        "access_token": "-TVAdhTAVW1iuLFx",
+        "first_page_url": "http://www.test.com/images/icons/medium/ppt.png",
+        "folder_id": 14
+      },
+      {
+        "id": 1,
+        "name": "I'm deck number 1",
+        "extension": "ppt",
+        "version": 1,
+        "size": 1601,
+        "created_at": "2013-05-02T10:14:58Z",
+        "updated_at": "2013-05-02T10:14:59Z",
+        "creator": {
+          "id": 1,
+          "name": "User 1",
+          "email": "email_1@skyslides.com",
+          "uuid": "387a3ddb-eb1f-4988-bb5b-029f1e8af784"
+        },
+        "url": "http://www.example.com/decks/1",
+        "access_token": "SreDn0tVyLo64pNG",
+        "first_page_url": "http://www.test.com/images/icons/medium/ppt.png",
+        "folder_id": 13
+      }
+    ]
+  }
