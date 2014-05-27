@@ -12,10 +12,18 @@ class Report
     resource.get(:accept => 'application/json')
   end
 
-  def category?(extension)
+  def categories
     {
-      videos: ["avi"]
-    }.each{|key, value|
+      videos: ["avi"],
+      songs: ["mp3"],
+      documents: ["odt", "docx"],
+      binaries: ["bin"],
+      text: ["txt"]
+    }
+  end
+
+  def category?(extension)
+    categories.each{|key, value|
       return key.to_s.capitalize if value.include?(extension)
     }
     return "Others"
