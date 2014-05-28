@@ -20,15 +20,6 @@ describe UserFile do
     it { file7.category.should eq 'Others' }
   end
 
-  context "File Gravity" do
-    it { file1.gravity.should eq 1.4 }
-    it { file2.gravity.should eq 1.2 }
-    it { file3.gravity.should eq 1.1 }
-    it { file5.gravity.should eq 1.0 }
-    it { file6.gravity.should eq 1.0 }
-    it { file7.gravity.should eq 1.0}
-  end
-
   context "File Weight" do
     it { file1.weight.should eq 14336.00 }
     it { file2.weight.should eq 4300.80 }

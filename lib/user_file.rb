@@ -8,13 +8,12 @@ CATEGORIES = {
 
 class UserFile
   attr_reader :category
-  attr_reader :gravity
   attr_reader :weight
 
   def initialize(extension, size)
     @category = category?(extension)
-    @gravity = gravity?(@category)
-    @weight = ((size * @gravity) * 20).round / 20.0
+    gravity = gravity?(@category)
+    @weight = ((size * gravity) * 20).round / 20.0
   end
 
   def category?(extension)
