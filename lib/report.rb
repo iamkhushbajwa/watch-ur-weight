@@ -36,6 +36,12 @@ class Report
     sum
   end
 
+  def total_ideal_weight(files)
+    sum = 0
+    files.each{ |file| sum += file.size }
+    sum
+  end
+
   def displacement(categories)
   end
 end

@@ -36,8 +36,7 @@ describe Report do
   end
 
   it "can return the total ideal weight of files" do
-    # report.total_ideal_weight(files)
-    expect(report.total_ideal_weight(files))
+    expect(report.total_ideal_weight(files)).to eq 262860
   end
 
   xit "can return the total displacement of files" do
