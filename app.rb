@@ -7,6 +7,7 @@ enable :sessions
 set :session_secret, 'sharethatwork'
 
 get '/' do
+  @report = session[:report] ? session[:report] : "<-----------\nEnter your credentials"
   erb :index
 end
 
