@@ -17,9 +17,9 @@ describe Report do
     expect(report.json(response)).to have_key('files')
   end
 
-  it "can split the parsed json" do
+  it "can extract files from the parsed json" do
     response = File.read("spec/sample_response.json")
     parsed = report.json(response)
-    expect(report.extract_files(parsed)[0]).to eq ["wombats", "avi", 10240]
+    expect(report.extract_files(parsed).count).to eq 7
   end
 end
