@@ -1,4 +1,4 @@
-Watch Ur Weight[![Code Climate](https://codeclimate.com/github/khushkaran/watch-ur-weight.png)](https://codeclimate.com/github/khushkaran/watch-ur-weight)
+Watch Ur Weight [![Code Climate](https://codeclimate.com/github/khushkaran/watch-ur-weight.png)](https://codeclimate.com/github/khushkaran/watch-ur-weight)
 ---
 ![](screenshot.png?raw=true)
 ### The Problem
