@@ -29,4 +29,13 @@ class Report
     end
     categories
   end
+
+  def total_weight(categories)
+    sum = 0
+    categories.each{|key,value| sum += value[:total_weight]}
+    sum
+  end
+
+  def displacement(categories)
+  end
 end
