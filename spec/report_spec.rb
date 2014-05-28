@@ -31,6 +31,11 @@ describe Report do
     expect(report.extract_categories(files)["Video"]).to eq result
   end
 
+  it "can return a hash of hashes with details about each category" do
+    result = {files_count: 2, total_weight: 3491.40}
+    expect(report.extract_categories(files)["Document"]).to eq result
+  end
+
   it "can return the total weight of files" do
     expect(report.total_weight(categories)).to eq 276282.25
   end
