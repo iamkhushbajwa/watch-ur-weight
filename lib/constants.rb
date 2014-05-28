@@ -1,9 +1,9 @@
 module Constants
   
   CATEGORIES = {
-    video: ["avi"],
+    video: ["avi", "mp4"],
     song: ["mp3"],
-    document: ["odt", "docx"],
+    document: ["odt", "docx", "pdf"],
     binary: ["bin"],
     text: ["txt"]
   }
