@@ -25,7 +25,7 @@ describe UserFile do
     it { file2.weight.should eq 4300.80 }
     it { file3.weight.should eq 1238.65 }
     it { file5.weight.should eq 225280.00 }
-    it { file6.weight.should eq 102.00 }
+    it { file6.weight.should eq 202.00 }
     it { file7.weight.should eq 20480.00}
   end
 

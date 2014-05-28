@@ -11,6 +11,7 @@ class UserFile
     gravity = gravity?(@category)
     @size = size
     @weight = round_number(@size * gravity)
+    @weight += 100 if @category == "Text"
   end
 
   def round_number(number)

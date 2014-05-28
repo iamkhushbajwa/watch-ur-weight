@@ -32,7 +32,7 @@ describe Report do
   end
 
   it "can return the total weight of files" do
-    expect(report.total_weight(categories)).to eq 276182.25
+    expect(report.total_weight(categories)).to eq 276282.25
   end
 
   it "can return the total ideal weight of files" do
@@ -40,7 +40,7 @@ describe Report do
   end
 
   it "can return the total displacement of files" do
-    expect(report.displacement(categories, files)).to eq 13322.25
+    expect(report.displacement(categories, files)).to eq 13422.25
   end
 
   xit "can produce a report based on the input" do
