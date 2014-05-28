@@ -47,6 +47,7 @@ class Report
   end
 
   def result(categories, displacement, total_weight)
-    
+    result = "My Files (category / gravity)\n"
+    result << "\nTotal:    #{total_weight}\nDisplacement:    #{displacement}"
   end
 end
