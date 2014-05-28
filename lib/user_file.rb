@@ -4,11 +4,13 @@ class UserFile
   include Constants
   attr_reader :category
   attr_reader :weight
+  attr_reader :size
 
   def initialize(extension, size)
     @category = category?(extension)
     gravity = gravity?(@category)
-    @weight = round_number(size * gravity)
+    @size = size
+    @weight = round_number(@size * gravity)
   end
 
   def round_number(number)
