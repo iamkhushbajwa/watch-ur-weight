@@ -1,7 +1,5 @@
 require "sinatra"
 require_relative "lib/report"
-require 'dotenv'
-Dotenv.load
 
 enable :sessions
 set :session_secret, 'sharethatwork'
@@ -13,7 +11,7 @@ end
 
 post '/' do
   report = Report.new
-  response = report.list_files(params[:username], params[:password], ENV['WORKSHARE_API_KEY'])
+  response = report.list_files(params[:username], params[:password])
   parsed = report.json(response)
   files = report.extract_files(parsed)
   categories = report.extract_categories(files)

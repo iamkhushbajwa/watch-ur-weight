@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
+group :development, :test do
+  gem 'dotenv'
+  gem 'rspec'
+  gem 'shotgun'
+end
+
 gem 'sinatra'
-gem 'rspec'
-gem 'shotgun'
 gem 'rest-client'
-gem 'dotenv'
 gem 'activesupport'
