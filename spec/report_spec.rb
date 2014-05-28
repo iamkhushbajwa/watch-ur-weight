@@ -29,4 +29,13 @@ describe Report do
     result = {files_count: 2, total_weight: 43008.00}
     expect(report.extract_categories(files)["Videos"]).to eq result
   end
+
+  xit "can return the total weight of files" do
+  end
+
+  xit "can return the total displacement of files" do
+  end
+
+  xit "can produce a report based on the input" do
+  end
 end
