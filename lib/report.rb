@@ -1,6 +1,7 @@
 require 'json'
 require 'rest_client'
 require "user_file"
+require 'active_support/inflector'
 
 class Report
   def json(response)
@@ -48,6 +49,10 @@ class Report
 
   def result(categories, displacement, total_weight)
     result = "My Files (category / gravity)\n"
+    categories.each{|key,value|
+      category = value[:files_count] > 1 ? key.pluralize : key
+      result << "#{value[:files_count]} #{category}    #{value[:total_weight].round(2)}\n"
+    }
     result << "\nTotal:    #{total_weight}\nDisplacement:    #{displacement}"
   end
 end

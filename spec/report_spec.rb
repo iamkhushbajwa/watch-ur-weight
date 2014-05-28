@@ -46,7 +46,7 @@ describe Report do
   it "can produce a report based on the input" do
     displacement = report.displacement(categories, files)
     total_weight = report.total_weight(categories)
-    result = "My Files (category / gravity)\n2 Videos    44.8\n1 Song    4.2\n2 Documents    3.41\n1 Binary    220.0\n1 Text    100.1\n\nTotal:    276282.25\nDisplacement:    13422.25"
+    result = "My Files (category / gravity)\n2 Videos    43008.0\n1 Song    4300.8\n2 Documents    3491.45\n1 Binary    225280.0\n1 Text    202.0\n\nTotal:    276282.25\nDisplacement:    13422.25"
     expect(report.result(categories, displacement, total_weight)).to eq result
   end
 end
