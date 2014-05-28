@@ -1,12 +1,7 @@
-CATEGORIES = {
-      videos: ["avi"],
-      songs: ["mp3"],
-      documents: ["odt", "docx"],
-      binaries: ["bin"],
-      text: ["txt"]
-    }
+require "constants"
 
 class UserFile
+  include Constants
   attr_reader :category
   attr_reader :weight
 
@@ -28,13 +23,6 @@ class UserFile
   end
 
   def gravity?(category)
-    {
-      videos: 1.4,
-      songs: 1.2,
-      documents: 1.1,
-      binaries: 1.0,
-      text: 1.0,
-      others: 1.0
-    }[category.downcase.to_sym]
+    GRAVITIES[category.downcase.to_sym]
   end
 end
