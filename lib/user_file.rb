@@ -16,6 +16,10 @@ class UserFile
     @weight = ((size * gravity) * 20).round / 20.0
   end
 
+  def round_number(number)
+    (number*20).ceil.to_f/20
+  end
+
   def category?(extension)
     CATEGORIES.each{|key, value|
       return key.to_s.capitalize if value.include?(extension)

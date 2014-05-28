@@ -28,4 +28,18 @@ describe UserFile do
     it { file6.weight.should eq 102.00 }
     it { file7.weight.should eq 20480.00}
   end
+
+  context "Rounding numbers" do
+    specify "1.04 to 1.05" do
+      expect(file1.round_number(1.04)).to eq 1.05
+    end
+
+    specify "1.06 to 1.10" do
+      expect(file1.round_number(1.06)).to eq 1.10
+    end
+
+    specify "1.2 to 1.2" do
+      expect(file1.round_number(1.2)).to eq 1.2
+    end
+  end
 end
