@@ -11,8 +11,7 @@ describe Report do
   it "can load a user's files" do
     username = ENV['TEST_USERNAME']
     password = ENV['TEST_PASSWORD']
-    apikey = ENV['TEST_APIKEY']
-    response2 = report.list_files(username, password, apikey)
+    response2 = report.list_files(username, password)
     expect(report.json(response2)).to have_key('files')
   end
 
