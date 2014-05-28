@@ -45,4 +45,8 @@ class Report
   def displacement(categories, files)
     total_weight(categories) - total_ideal_weight(files)
   end
+
+  def result(categories, displacement, total_weight)
+    
+  end
 end
