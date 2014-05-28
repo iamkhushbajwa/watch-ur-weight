@@ -70,7 +70,7 @@ directory and include the following variables.
 ```
 export TEST_USERNAME=username
 export TEST_PASSWORD=password
-export TEST_APIKEY=apikey
+export WORKSHARE_API_KEY=apikey
 ```
 
 ### The Instructions
