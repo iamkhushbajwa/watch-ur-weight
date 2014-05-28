@@ -9,12 +9,12 @@ module Constants
   }
 
   GRAVITIES = {
-    video: 1.4,
-    song: 1.2,
-    document: 1.1,
-    binary: 1.0,
-    text: 1.0,
-    other: 1.0
+    video: 1.40,
+    song: 1.20,
+    document: 1.10,
+    binary: 1.00,
+    text: 1.00,
+    other: 1.00
   }
 
 end

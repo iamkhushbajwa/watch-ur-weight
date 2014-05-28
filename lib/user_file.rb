@@ -10,11 +10,12 @@ class UserFile
     @category = category?(extension)
     gravity = gravity?(@category)
     @size = size
-    @weight = round_number(@size * gravity)
+    weight = (@size * gravity).round(2)
+    @weight = round_to_nearest_0_05(weight)
     @weight += 100 if @category == "Text"
   end
 
-  def round_number(number)
+  def round_to_nearest_0_05(number)
     (number*20).ceil.to_f/20
   end
 
