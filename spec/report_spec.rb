@@ -20,6 +20,9 @@ describe Report do
   it "can extract files from the parsed json" do
     response = File.read("spec/sample_response.json")
     parsed = report.json(response)
-    expect(report.extract_files(parsed).count).to eq 7
+    files = report.extract_files(parsed)
+    expect(files.count).to eq 7
+    expect(files[0].category).to eq "Videos"
+    expect(files[0].weight).to eq "14336.00"
   end
 end
