@@ -6,6 +6,7 @@ describe Report do
   let(:response){ File.read("spec/sample_response.json") }
   let(:parsed) { report.json(response) }
   let(:files) { report.extract_files(parsed) }
+  let(:categories) { report.extract_categories(files) }
 
   it "can load a user's files" do
     username = ENV['TEST_USERNAME']
@@ -30,10 +31,18 @@ describe Report do
     expect(report.extract_categories(files)["Videos"]).to eq result
   end
 
-  xit "can return the total weight of files" do
+  it "can return the total weight of files" do
+    expect(report.total_weight(categories)).to eq 276182.25
+  end
+
+  it "can return the total ideal weight of files" do
+    # report.total_ideal_weight(files)
+    expect(report.total_ideal_weight(files))
   end
 
   xit "can return the total displacement of files" do
+    # p report.displacement(categories)
+    expect(report.displacement(categories))
   end
 
   xit "can produce a report based on the input" do
