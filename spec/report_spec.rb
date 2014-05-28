@@ -22,13 +22,13 @@ describe Report do
 
   it "can extract files from the parsed json" do
     expect(files.count).to eq 7
-    expect(files[0].category).to eq "Videos"
+    expect(files[0].category).to eq "Video"
     expect(files[0].weight).to eq 14336.00
   end
 
   it "can return a hash of hashes with details about each category" do
     result = {files_count: 2, total_weight: 43008.00}
-    expect(report.extract_categories(files)["Videos"]).to eq result
+    expect(report.extract_categories(files)["Video"]).to eq result
   end
 
   it "can return the total weight of files" do

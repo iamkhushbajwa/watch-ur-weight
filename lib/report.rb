@@ -32,7 +32,6 @@ class Report
 
   def total_weight(categories)
     sum = 0
-    p categories
     categories.each{|key,value| sum += value[:total_weight]}
     sum
   end

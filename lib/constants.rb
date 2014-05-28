@@ -1,20 +1,20 @@
 module Constants
   
   CATEGORIES = {
-    videos: ["avi"],
-    songs: ["mp3"],
-    documents: ["odt", "docx"],
-    binaries: ["bin"],
+    video: ["avi"],
+    song: ["mp3"],
+    document: ["odt", "docx"],
+    binary: ["bin"],
     text: ["txt"]
   }
 
   GRAVITIES = {
-    videos: 1.4,
-    songs: 1.2,
-    documents: 1.1,
-    binaries: 1.0,
+    video: 1.4,
+    song: 1.2,
+    document: 1.1,
+    binary: 1.0,
     text: 1.0,
-    others: 1.0
+    other: 1.0
   }
 
 end

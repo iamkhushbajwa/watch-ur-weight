@@ -11,13 +11,13 @@ describe UserFile do
   let(:file7) {UserFile.new("nothing", 20480)}
   
   context "File Types" do
-    it { file1.category.should eq 'Videos' }
-    it { file2.category.should eq 'Songs' }
-    it { file3.category.should eq 'Documents' }
-    it { file4.category.should eq 'Documents' }
-    it { file5.category.should eq 'Binaries' }
+    it { file1.category.should eq 'Video' }
+    it { file2.category.should eq 'Song' }
+    it { file3.category.should eq 'Document' }
+    it { file4.category.should eq 'Document' }
+    it { file5.category.should eq 'Binary' }
     it { file6.category.should eq 'Text' }
-    it { file7.category.should eq 'Others' }
+    it { file7.category.should eq 'Other' }
   end
 
   context "File Weight" do

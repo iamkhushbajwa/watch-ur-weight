@@ -22,7 +22,7 @@ class UserFile
     CATEGORIES.each{|key, value|
       return key.to_s.capitalize if value.include?(extension)
     }
-    return "Others"
+    return "Other"
   end
 
   def gravity?(category)
