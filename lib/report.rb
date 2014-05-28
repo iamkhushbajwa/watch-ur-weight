@@ -1,6 +1,6 @@
 require 'json'
 require 'rest_client'
-require "user_file"
+require_relative "user_file"
 require 'active_support/inflector'
 
 class Report
