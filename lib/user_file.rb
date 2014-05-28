@@ -13,7 +13,7 @@ class UserFile
   def initialize(extension, size)
     @category = category?(extension)
     gravity = gravity?(@category)
-    @weight = ((size * gravity) * 20).round / 20.0
+    @weight = round_number(size * gravity)
   end
 
   def round_number(number)
