@@ -13,6 +13,6 @@ class Report
   end
 
   def extract_files(parsed)
-    parsed["files"]
+    parsed["files"].map{|file| UserFile.new(file["extension"], file["size"])}
   end
 end

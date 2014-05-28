@@ -23,6 +23,6 @@ describe Report do
     files = report.extract_files(parsed)
     expect(files.count).to eq 7
     expect(files[0].category).to eq "Videos"
-    expect(files[0].weight).to eq "14336.00"
+    expect(files[0].weight).to eq 14336.00
   end
 end
