@@ -11,12 +11,13 @@
 
 <div>
   <p>Enter your Workshare credentials:</p>
-  <form>
-    Email: <input type="text" name="firstname"><br>
-    Password: <input type="password" name="pwd">
+  <form action="/" method="post">
+    Email: <input type="text" name="username"><br>
+    Password: <input type="password" name="password"><br>
+    <input type="submit" value="Get Report">
   </form>
 </div>
 
 <div>
-<textarea></textarea>
+<textarea><%= @report %></textarea>
 </div>
