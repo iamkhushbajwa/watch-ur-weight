@@ -2,13 +2,13 @@ require "spec_helper"
 require "user_file"
 
 describe UserFile do
-  let(:file1) {UserFile.new("avi", 10240)}
-  let(:file2) {UserFile.new("mp3", 3584)}
-  let(:file3) {UserFile.new("odt", 1126)}
-  let(:file4) {UserFile.new("docx", 2048)}
-  let(:file5) {UserFile.new("bin", 225280)}
-  let(:file6) {UserFile.new("txt", 102)}
-  let(:file7) {UserFile.new("nothing", 20480)}
+  let(:file1) {UserFile.new("avi", 10485760)}
+  let(:file2) {UserFile.new("mp3", 3670016)}
+  let(:file3) {UserFile.new("odt", 1153024)}
+  let(:file4) {UserFile.new("docx", 2097152)}
+  let(:file5) {UserFile.new("bin", 230686720)}
+  let(:file6) {UserFile.new("txt", 104448)}
+  let(:file7) {UserFile.new("nothing", 20971520)}
   
   context "File Types" do
     it { file1.category.should eq 'Video' }

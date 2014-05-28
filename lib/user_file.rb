@@ -9,7 +9,7 @@ class UserFile
   def initialize(extension, size)
     @category = category?(extension)
     gravity = gravity?(@category)
-    @size = size
+    @size = size / 1024
     weight = (@size * gravity).round(2)
     @weight = round_to_nearest_0_05(weight)
     @weight += 100 if @category == "Text"

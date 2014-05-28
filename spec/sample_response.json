@@ -8,37 +8,37 @@
       {
         "name": "wombats",
         "extension": "avi",
-        "size": 10240
+        "size": 10485760
       },
       {
         "name": "crazy-dog",
         "extension": "avi",
-        "size": 20480
+        "size": 20971520
       },
       {
         "name": "backinblack",
         "extension": "mp3",
-        "size": 3584
+        "size": 3670016
       },
       {
         "name": "study1",
         "extension": "odt",
-        "size": 1126
+        "size": 1153024
       },
       {
         "name": "study2",
         "extension": "docx",
-        "size": 2048
+        "size": 2097152
       },
       {
         "name": "firefox",
         "extension": "bin",
-        "size": 225280
+        "size": 230686720
       },
       {
         "name": "readme",
         "extension": "txt",
-        "size": 102
+        "size": 104448
       }
     ]
   }
